@@ -1,0 +1,25 @@
+/* Aligns items vertically in the center */
+.app-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Groups the logo and the text with a small gap */
+.toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Sizing for the logo image */
+.toolbar-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Flexbox trick: Takes all available empty space to push items to the sides */
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
