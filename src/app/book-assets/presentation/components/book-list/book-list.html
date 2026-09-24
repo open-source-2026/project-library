@@ -1,0 +1,11 @@
+<div class="book-grid">
+
+  @for (book of books(); track book.key) {
+    <!-- Renders individual book card for each item in the collection -->
+    <app-book-item [book]="book"></app-book-item>
+  } @empty {
+    <!-- Fallback message when the collection is empty -->
+    <p>No books available for this category.</p>
+  }
+
+</div>

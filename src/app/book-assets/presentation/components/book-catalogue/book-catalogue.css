@@ -1,0 +1,17 @@
+/* Main container padding */
+.catalogue-container {
+  padding: 24px;
+}
+
+/* Typography for the main title */
+.catalogue-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+/* Spacing below the toggle buttons */
+.toggle-container {
+  margin-bottom: 24px;
+}
