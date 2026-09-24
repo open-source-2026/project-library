@@ -1,0 +1,28 @@
+<div class="catalogue-container">
+
+  <h1 class="catalogue-title">Book Catalogue</h1>
+
+  <!-- Toggle buttons for category selection -->
+  <div class="toggle-container">
+    <mat-button-toggle-group
+      name="categoryToggle"
+      [value]="store.activeCategory()"
+      (change)="onCategoryChange($event.value)">
+
+      <!-- Option 1: Software Engineering -->
+      <mat-button-toggle value="software+engineering">
+        Software Engineering
+      </mat-button-toggle>
+
+      <!-- Option 2: Artificial Intelligence -->
+      <mat-button-toggle value="artificial+intelligence">
+        Artificial Intelligence
+      </mat-button-toggle>
+
+    </mat-button-toggle-group>
+  </div>
+
+  <!-- Renders the dumb list component passing the current state -->
+  <app-book-list [books]="store.currentBooks()"></app-book-list>
+
+</div>
