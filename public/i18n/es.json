@@ -1,0 +1,24 @@
+{
+  "app": {
+    "title": "Explorador de Open Library"
+  },
+  "catalogue": {
+    "title": "Catálogo de Libros",
+    "category": {
+      "software-engineering": "Ingeniería de Software",
+      "artificial-intelligence": "Inteligencia Artificial"
+    }
+  },
+  "book": {
+    "author": "Autor",
+    "first-published": "Primera Edición",
+    "editions": "Ediciones",
+    "details": "Detalles del Libro",
+    "cover-alt": "Portada de {{title}}"
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 OpenLibrary.org. Explorador de Open Library, Todos los derechos reservados.",
+    "powered-by": "Desarrollado con",
+    "and": "y"
+  }
+}

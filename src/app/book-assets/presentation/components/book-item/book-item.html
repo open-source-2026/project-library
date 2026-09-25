@@ -1,0 +1,30 @@
+<mat-card class="book-card">
+
+  <!-- toString: become url to string -->
+  <img mat-card-image [src]="book().coverUrl.toString()" [alt]="'book.cover-alt' | translate:{title: book().title}">
+
+  <mat-card-header>
+
+    <mat-card-title> {{ book().title}}</mat-card-title>
+
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <p><strong>{{ 'book.author' | translate }}:</strong> {{ book().authorName }}</p>
+    <p><strong>{{ 'book.first-published' | translate }}:</strong> {{ book().firstPublishYear }}</p>
+    <p><strong>{{ 'book.editions' | translate }}:</strong> {{ book().editionCount }}</p>
+
+  </mat-card-content>
+
+  <mat-card-actions>
+    <!-- target="_blank" es obligatorio para un nuevo tab -->
+    <!-- Igual que la portada, accedemos al string del Value Object -->
+    <a mat-button color="primary" [href]="book().detailsUrl.toString()" target="_blank">
+      {{ 'book.details' | translate }}
+    </a>
+
+  </mat-card-actions>
+
+
+</mat-card>
