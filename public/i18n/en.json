@@ -1,0 +1,24 @@
+{
+  "app": {
+    "title": "Open Library Explorer"
+  },
+  "catalogue": {
+    "title": "Book Catalogue",
+    "category": {
+      "software-engineering": "Software Engineering",
+      "artificial-intelligence": "Artificial Intelligence"
+    }
+  },
+  "book": {
+    "author": "Author",
+    "first-published": "First Published",
+    "editions": "Editions",
+    "details": "Book Details",
+    "cover-alt": "Cover of {{title}}"
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 OpenLibrary.org. Open Library Explorer, All rights reserved.",
+    "powered-by": "Powered by",
+    "and": "and"
+  }
+}
