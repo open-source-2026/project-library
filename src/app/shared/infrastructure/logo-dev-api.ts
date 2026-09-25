@@ -1,4 +1,4 @@
-﻿import {Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {environment} from '../../../environments/environment';
 
 @Injectable({
@@ -22,7 +22,7 @@ export class LogoDevApi {
    * @param url - A string value containing the website URL.
    */
   getUrlToLogo(url: string): string {
-    //console.log('getUrlToLogo', source);
-    return `${this.baseUrl}${new URL(url).hostname}?token=${this.apiKey}`;
+    const validUrl = url.startsWith('http') ? url : `https://${url}`;
+    return `${this.baseUrl}${new URL(validUrl).hostname}?token=${this.apiKey}`;
   }
 }

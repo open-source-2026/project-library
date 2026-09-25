@@ -2,13 +2,15 @@ import { Component, inject, OnInit } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { BookStore } from '../../../application/book-store';
 import { BookListComponent } from '../book-list/book-list';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-book-catalogue',
   standalone: true,
   imports: [
     MatButtonToggleModule,
-    BookListComponent
+    BookListComponent,
+    TranslatePipe
   ],
   templateUrl: './book-catalogue.html',
   styleUrl: './book-catalogue.css'

@@ -2,13 +2,15 @@ import { Component, inject } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LanguageSwitcher } from '../language-switcher/language-switcher'; // Ajusta la ruta si es necesario
 import { LogoDevApi } from '../../../infrastructure/logo-dev-api'; // Ajusta la ruta a tu servicio
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-toolbar',
   standalone: true,
   imports: [
     MatToolbarModule,
-    LanguageSwitcher // Injecting your professor's switcher here!
+    LanguageSwitcher, // Injecting your professor's switcher here!
+    TranslatePipe
   ],
   templateUrl: './toolbar.html',
   styleUrl: './toolbar.css'

@@ -1,7 +1,7 @@
 <mat-card class="book-card">
 
   <!-- toString: become url to string -->
-  <img mat-card-image [src]="book().coverUrl.toString()" alt="Cover of {{book().title}}">
+  <img mat-card-image [src]="book().coverUrl.toString()" [alt]="'book.cover-alt' | translate:{title: book().title}">
 
   <mat-card-header>
 
@@ -11,9 +11,9 @@
 
   <mat-card-content>
 
-    <p><strong>Author:</strong> {{ book().authorName }}</p>
-    <p><strong>First Published:</strong> {{ book().firstPublishYear }}</p>
-    <p><strong>Editions:</strong> {{ book().editionCount }}</p>
+    <p><strong>{{ 'book.author' | translate }}:</strong> {{ book().authorName }}</p>
+    <p><strong>{{ 'book.first-published' | translate }}:</strong> {{ book().firstPublishYear }}</p>
+    <p><strong>{{ 'book.editions' | translate }}:</strong> {{ book().editionCount }}</p>
 
   </mat-card-content>
 
@@ -21,7 +21,7 @@
     <!-- target="_blank" es obligatorio para un nuevo tab -->
     <!-- Igual que la portada, accedemos al string del Value Object -->
     <a mat-button color="primary" [href]="book().detailsUrl.toString()" target="_blank">
-      Book Details
+      {{ 'book.details' | translate }}
     </a>
 
   </mat-card-actions>
